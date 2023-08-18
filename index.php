@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                    <p>This is how your wheel distribution looks like.</p>
+                        <p>This is how your wheel distribution looks like.</p>
                     </div>
                     <div class="row">
                         <div class="col d-flex justify-content-center align-items-center mt-3">
@@ -58,12 +58,26 @@
                                 <div id="inputContainer">
 
                                 </div>
+                                <label for="numero" class="form-label">Number of spins</label>
+                                <input type="number" class="form-control text-center" name="numero" id="numero" aria-describedby="helpId" placeholder="0">
                             </form>
-                            <div id="addContainer">
-                                <button type="button" class="btn second-color" onclick="agregarInputs()">Agregar Inputs</button>
-                                <button type="button" class="btn btn-danger" onclick="eliminarUltimoInput()">Eliminar Ultimo</button>
+                            <div id="addContainer" class="mt-3">
+                                <button type="button" class="btn second-color" onclick="agregarInputs()">Add</button>
+                                <button type="button" class="btn btn-danger" onclick="eliminarUltimoInput()">Delete</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 d-flex flex-row justify-content-center align-items-center text-center">
+                    <h2>Results</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 d-flex flex-row justify-content-center align-items-center">
+                    <div id="resultBar" style="width: 400px; text-align: center;">
+                        <canvas id="BarChart"></canvas>
                     </div>
                 </div>
             </div>
